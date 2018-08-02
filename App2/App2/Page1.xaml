@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page1">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Picker
+                x:Name="Controlador"
+                Title="Seleccionar"
+                TextColor="DarkOrange"
+                SelectedIndexChanged="PickMusic_SelectIndexChange"
+                >
+            <Picker.Items>
+                <x:String>Pop</x:String>
+                <x:String>Rock</x:String>
+                <x:String>Instrumental</x:String>
+                <x:String>Clasica</x:String>
+                <x:String>Opera</x:String>
+            </Picker.Items>
+            </Picker>
+
+            <ProgressBar
+                x:Name="progressNum"
+                Progress="1"
+                ></ProgressBar>
+            <Button
+                x:Name="btnSimular"
+                Text="Simular"
+                BackgroundColor="DarkCyan"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Clicked="btnSimular_Clicked"></Button>
+
+            <SearchBar
+                x:Name="searchBar"
+                Placeholder="Buscar"
+                CancelButtonColor="Red"
+                SearchButtonPressed="Handle_SearchButtonPressed"
+                TextColor="DarkOrchid"
+                TextChanged="Handle_TextChanged"></SearchBar>
+
+            <Slider
+                x:Name="slider"
+                Maximum="200"
+                Minimum="100"
+                Value="120"
+                ValueChanged="Handle_ValueChanged"></Slider>
+            <Label
+                x:Name="labCambio"
+                TextColor="DarkBlue"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"></Label>
+
+            <Stepper
+                x:Name="steeper"
+                 Maximum="150"
+                Minimum="50"
+                Increment="25"
+                ValueChanged="stepEvent"></Stepper>
+            <Label
+                x:Name="lbDisplay"></Label>
+
+            <Switch
+                x:Name="swtEstado"
+                IsToggled="True"
+                Toggled="Handle_toggled"
+                HorizontalOptions="Center"></Switch>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

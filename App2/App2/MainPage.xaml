@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+
+ 
+        <ScrollView>
+        <StackLayout>
+            <Image
+                Source="sonrie.png"
+                Aspect="AspectFit"></Image>
+            <Label
+                HorizontalOptions="Center"
+                Text="xamarin Forms"
+                TextColor="Azure"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="End"
+                BackgroundColor="DarkBlue"
+                WidthRequest="200"></Label>
+            <Label VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Text="Xamarin desarrolla aplicaciones moviles multiplataforma"
+                   TextColor="DarkMagenta"
+                   VerticalTextAlignment="End"
+                   BackgroundColor="Aqua"
+                   WidthRequest="200"
+                   HeightRequest="300"
+                   LineBreakMode="HeadTruncation"></Label>
+
+
+        </StackLayout> 
+            
+            
+        </ScrollView>
+    
+
+</ContentPage>
